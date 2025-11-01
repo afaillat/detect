@@ -26,3 +26,32 @@ It combines the power of YOLOv5, a state-of-the-art deep learning model for obje
    ```bash
    git clone https://github.com/<username>/ExamSafe-AI.git
    cd ExamSafe-AI
+
+2. **Create and activate a virtual environment**
+python -m venv venv
+source venv/bin/activate      # on macOS 
+venv\Scripts\activate         # on Windows
+
+3. **Install the dependencies**
+pip install -r requirements.txt
+
+##  How to run the application ? 
+
+## Option 1 — Web App (Streamlit version)
+This launches the full interactive interface inside your browser.
+python -m streamlit run app.py
+
+- Click ▶️ Start to activate the webcam
+- Click ⏹ Stop to stop the detection
+- The detected objects are displayed directly in the web interface
+
+## Option 2 — Direct Python script (Terminal version)
+This version runs YOLOv5 directly from the terminal without the Streamlit interface.
+It opens a standard OpenCV camera window.
+
+python detect.py --source 0
+
+- source 0 → uses your computer’s webcam
+You can also use:
+- source path/to/video.mp4 → to test a saved video
+- source path/to/image.jpg → to test a single image
