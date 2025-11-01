@@ -15,7 +15,7 @@ It combines the power of YOLOv5, a state-of-the-art deep learning model for obje
 - **Real-time detection** directly from your webcam  
 - **YOLOv5 model** for accurate object recognition  
 - **Streamlit interface** for a simple and interactive user experience  
-- **Local processing** — no data or images are stored online  
+- **Local processing**, no data or images are stored online  
 - Detects objects like cellphones, bottles, books, laptops, cups and scissors.
 
 ---
